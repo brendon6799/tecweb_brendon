@@ -57,4 +57,16 @@ function operacoesBasicas(operacao, numero1, numero2) {
  * @param {*} elemento2
  * @returns {string} mensagem com o resultado da comparação 
  */
-function comparadorBasico(elemento1, elemento2) { }
+function comparadorBasico(elemento1, elemento2) {
+    if (elemento1 === elemento2) {
+        mensagem = ('Elemento ' + elemento1 + ' ('+ typeof(elemento1)+')' + ' é estritamente igual ao elemento ' + elemento2 + ' ('+ typeof(elemento2)+')')
+    }
+
+    if (elemento1 != elemento2) {
+        mensagem = ('Elemento ' + elemento1 + ' ('+ typeof(elemento1)+')' + ' é diferente do elemento ' + elemento2 + ' ('+ typeof(elemento2)+')')
+    }
+
+
+
+    return mensagem
+}
