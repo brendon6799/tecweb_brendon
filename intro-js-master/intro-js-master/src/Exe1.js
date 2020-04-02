@@ -34,8 +34,14 @@ function operacoesBasicas(operacao, numero1, numero2) {
         resultado = numero1 * numero2;
     }
     
-    if (operacao == 'D') {
-        resultado = numero1 / numero2;
+    if (operacao =='D') {
+        if (numero2 > 0){
+            resultado = numero1 / numero2
+        }
+        else {
+            resultado = NaN
+        }
+        
     }
 
     if (operacao == 'P') {
